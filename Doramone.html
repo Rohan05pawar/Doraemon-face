@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .circle {
+        height: 330px;
+        width: 370px;
+        background-color: royalblue;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .circle-2 {
+        height: 230px;
+        width: 290px;
+        border-radius: 50%;
+        background-color: white;
+        top: 90px;
+        position: relative;
+      }
+      .eye-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: -50px;
+      }
+      .eye {
+        height: 100px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: white;
+        position: relative;
+        border: 2px solid black;
+      }
+      .eyeball {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #000;
+        position: absolute;
+        margin: auto;
+        top: 40px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .eye-l .eyeball {
+        right: -40px;
+      }
+      .eye-r .eyeball {
+        left: -40px;
+      }
+      .nose {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #ef0107, #aa0000);
+        position: absolute;
+        margin: auto;
+        top: -120px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .dot {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        margin: auto;
+        top: -8px;
+        left: -20px;
+        right: 0;
+        bottom: 0;
+      }
+      .vertical-line {
+        height: 43px;
+        width: 3px;
+        background-color: #000;
+        position: absolute;
+        margin: auto;
+        top: -38px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .line {
+        height: 2px;
+        width: 60px;
+        background: #000;
+        position: relative;
+        margin: auto;
+        top: -50px;
+        left: 50px;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        margin: 14px;
+      }
+      .right-lines {
+        position: relative;
+        left: 104px;
+        top: -48px;
+      }
+      .line-1 {
+        transform: rotate(10deg);
+      }
+      .line-3 {
+        transform: rotate(-10deg);
+      }
+      .line-4 {
+        transform: rotate(-10deg);
+      }
+      .line-6 {
+        transform: rotate(10deg);
+      }
+      .mouth {
+        height: 90px;
+        width: 170px;
+        background-color: #e60000;
+        border: 2px solid black;
+        border-radius: 90px 90px 500px 500px;
+        overflow: hidden;
+        /* border-bottom-left-radius: 500px;
+        border-bottom-right-radius: 350px; */
+        position: absolute;
+        margin: auto;
+        top: 90px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .toung {
+        height: 70px;
+        width: 120px;
+        position: relative;
+        border-radius: 40% 50% 0 0;
+        border: 2px solid black;
+        left: 8px;
+        top: 40px;
+        background-color: #ef0107;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle circle-1">
+        <div class="circle circle-2">
+          <div class="eye-container">
+            <div class="eye eye-l">
+              <div class="eyeball"></div>
+            </div>
+            <div class="eye eye-r">
+              <div class="eyeball"></div>
+            </div>
+          </div>
+          <div class="nose">
+            <div class="dot"></div>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+          <div class="right-lines">
+            <div class="line line-4"></div>
+            <div class="line line-5"></div>
+            <div class="line line-6"></div>
+          </div>
+          <div class="mouth">
+            <div class="toung"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
